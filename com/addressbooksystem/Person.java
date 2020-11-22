@@ -9,7 +9,7 @@ public class Person {
 		int zip;
 		String email;
 
-	public Person(String firstName, String lastName, String city, String state, long MobileNo, int zip) {
+	public Person(String firstName, String lastName, String city, String state, long MobileNo, int zip, String email) {
 
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -17,7 +17,7 @@ public class Person {
 		this.state = state;
 		this.MobileNo = MobileNo;
 		this.zip = zip;
-		this.email=email;
+		this.email = email;
 	}
 
 	public String getFirstName() {
@@ -57,7 +57,7 @@ public class Person {
 	}
 
 	public void setMobileNo(long mobileNo) {
-		MobileNo = mobileNo;
+		this.MobileNo = mobileNo;
 	}
 
 	public int getZip() {
@@ -67,20 +67,18 @@ public class Person {
 	public void setZip(int zip) {
 		this.zip = zip;
 	}
-	
-	public String getemail() {
-			return email;
+	public String getEmail() {
+		return email;
 	}
 	
-	public void setemail(String email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
 
 	public String toString() {
 	    return "Person [firstName=" + firstName + ", lastName=" + lastName + ", city=" + city
-	            + ", state=" + state + ", pincode=" + zip + ", MobileNo=" + MobileNo +"]"+"\n";
+	            + ", state=" + state + ", pincode=" + zip + ", MobileNo=" + MobileNo + ", email=" + email +"]"+"\n";
 	}
-
 }
 
 
